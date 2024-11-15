@@ -15,7 +15,7 @@
             <div class="topbar">
                 <div class="topbar_text">free draw</div>
                 <div class="topbar_buttons drawing">
-                    <button class="header_button pen">
+                    <button class="header_button">
                         <span class="front" style="display: flex; align-items: center; justify-content: center;">
                             <svg mlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 512 512">
@@ -26,7 +26,7 @@
                             </svg>
                         </span>
                     </button>
-                    <button class="header_button eraser">
+                    <button class="header_button">
                         <span class="front" style="display: flex; align-items: center; justify-content: center;">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 490 490">
@@ -37,7 +37,7 @@
                     </button>
                 </div>
                 <div class="topbar_buttons social">
-                    <button class="header_button invite">
+                    <button class="header_button">
                         <span class="front" style="display: flex; align-items: center; justify-content: center;">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 640 512">
@@ -51,9 +51,13 @@
         </div>
     </header>
     <div class="curtain">
-        <div class="curtain_info"></div>
+        <div class="curtain_text">free draw</div>
+        <div class="curtain_info">open space to draw something alone or with friends<br>no extra things and simple interface</div>
+        <button class="header_button curtain_button">
+            <span class="front" style="display: flex; font-size: 30px; align-items: center; justify-content: center;">
+                START
+            </span>
+        </button>
     </div>
-    <canvas id="drawingCanvas" resize="true" width="1920" height="367" style="-webkit-user-drag: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 1536px; height: 294px;">
-    </canvas>
 </body>
 </html>
