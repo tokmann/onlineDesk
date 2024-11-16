@@ -3,6 +3,10 @@
     padding: 0;
     overflow: hidden;
     font-family: 'Karla', 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
 
 p, h1, h2, h3, h4, h5 {
@@ -107,10 +111,6 @@ p, h1, h2, h3, h4, h5 {
 .curtain {
     flex-direction: column;
     position: fixed;
-    animation-delay: 2s;
-    animation-name: slide-out;
-    animation-duration: 1.5s; 
-    animation-fill-mode: forwards;
     background-color: #ffd139;
     font-size: 14px;
     position: fixed;
@@ -124,6 +124,12 @@ p, h1, h2, h3, h4, h5 {
     gap: 3.5rem;
 }
 
+.curtain-hidden {
+    animation-name: slide-out;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
 
 
 @keyframes slide-out {
@@ -135,3 +141,6 @@ p, h1, h2, h3, h4, h5 {
     }
 }
 
+.canvas {
+    flex-grow: 1;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
+    <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Karla:400|Roboto+Mono:400" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -50,10 +51,13 @@
             </div>
         </div>
     </header>
+    <canvas class="canvas">
+
+    </canvas>
     <div class="curtain">
         <div class="curtain_text">free draw</div>
         <div class="curtain_info">open space to draw something alone or with friends<br>no extra things and simple interface</div>
-        <button class="header_button curtain_button">
+        <button class="header_button curtain_button" onclick="curtain_handler()">
             <span class="front" style="display: flex; font-size: 30px; align-items: center; justify-content: center;">
                 START
             </span>
